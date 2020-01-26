@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Natia</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/all.min.css">
+
+<link rel="stylesheet" href="portfolo.css">
+<link href="https://fonts.googleapis.com/css?family=Miriam+Libre&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="fancybox/jquery.fancybox.min.css">
+<script src="fancybox/jquery-3.4.1.min.js"></script>
+<script src="fancybox/jquery.fancybox.min.js"></script>
+
+<style>
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Montserrat", sans-serif;
+    color: #696969;
+}
+
+.web {
+    color: #696969;
+
+    font-weight: bold;
+}
+
+.row-padding img {
+    margin-bottom: 12px;
+}
+
+.bar-item button {
+    color: #696969;
+
+}
+
+/* Sat the width of the sidebar to 120px */
+.sidebar {
+    width: 120px;
+    background: #808080;
+}
+
+/* Add a left margin to the "pege content" that metches the width of the sidebar (120px) */
+#main {
+    margin-left: 120px;
+}
+
+/* Remove margans from "page content" on smoll screns */
+@media only screen and (max-width: 600px) {
+    #main {
+        margin-left: 0;
+    }
+
+    .facebook {
+        background-color: darkgray;
+    }
+}
+
+.fab {
+    font-family: "Font Awesome 5 Brands";
+    color: gray;
+}
+
+.fa-instagram {
+    color: gray;
+}
+
+.loop {
+    width: 500px;
+    height: auto;
+
+
+}
+</style>
+
+<body class="black">
+
+    <!-- Icon Bar (Sidebar - hidden on smooll screns) -->
+
+    <nav class="sidebar bar-block small hide-small center">
+        <!-- Avatar image in top laft corner -->
+        <img src="nati33.jpg" alt="web master" class="natia" style="width:100%;
+         height: auto">
+        <a href="#" class="bar-item button padding-large hover-black">
+            <i class="fas fa-globe-europe xlarge"></i>
+            <p>HOME</p>
+        </a>
+        <a href="#about" class="bar-item button padding-large hover-black">
+            <i class="fas fa-user-astronaut xlarge"></i>
+            <p>ABOUT</p>
+        </a>
+        <a href="#photos" class="bar-item button padding-large hover-black">
+            <i class="fas fa-palette xlarge"></i>
+            <p>MY ART</p>
+        </a>
+        <a href="#contact" class="bar-item button padding-large hover-black">
+            <i class="fas fa-file-signature xlarge"></i>
+            <p>CONTACT</p>
+        </a>
+    </nav>
+
+    <!-- Navbar on small screens (Hidden on medium and large screens) -->
+    <div class="top hide-large hide-medium" id="myNavbar">
+        <div class="bar black opacity hover-opacity-off center small">
+            <a href="#" class="bar-item button" style="width:25% !important">HOME</a>
+            <a href="#about" class="bar-item button" style="width:25% !important">ABOUT</a>
+            <a href="#photos" class="bar-item button" style="width:25% !important">My Art</a>
+            <a href="#contact" class="bar-item button" style="width:25% !important">CONTACT</a>
+        </div>
+    </div>
+
+    <!-- Page Content -->
+    <div class="padding-large" id="main">
+
+        <!-- Hader/Home -->
+        <header class="container padding-32 center black" id="home">
+            <h1 class="jumbo"><span class="hide-small"></span> Natia Meskhi</h1>
+            <div class="web">
+                <p><b>Web Designer</b></p>
+            </div>
+            <img src="giphy.gif" alt="Flowers in Chania" width="313" height="480" frameBorder="0">
+        </header>
+
+        <!-- About Section -->
+        <div class="content justify text-grey padding-64" id="about">
+            <h2 class="text-light-grey">About me</h2>
+            <hr style="width:200px" class="opacity">
+            <p> <b>Hello, I am Natia Meskhi from Georgia. I wish to become Frontend Web Developer. I like creating
+                    things. I am highly motivated to study and get more skills.</b>
+            </p>
+            <p>
+                <img src="giphy3.gif" alt="Flowers in Chania" width="200" height="auto" frameBorder="0">
+            </p>
+            <h3 class="padding-16 text-light-grey">My Skills</h3>
+            <p class="wide">HTML</p>
+            <div class="white">
+                <div class="dark-grey" style="height:28px;width:95%"></div>
+            </div>
+            <p class="wide">CSS</p>
+            <div class="white">
+                <div class="dark-grey" style="height:28px;width:85%"></div>
+            </div>
+            <p class="wide">Javascript</p>
+            <div class="white">
+                <div class="dark-grey" style="height:28px;width:80%"></div>
+            </div><br>
+
+            <!-- Portfolio Section -->
+            <div class="padding-64 content" id="photos">
+                <h2 class="text-light-grey">My Art</h2>
+                <hr style="width:200px" class="opacity">
+            </div>
+
+            <!-- Grid for photos -->
+            <div class="row-padding" style="margin:0 -16px">
+                <div class="half">
+                    <a data-fancybox="gallery" href="5.jpg"><img src="5.jpg" alt="" style="width:100%"></a>
+                    <a data-fancybox="gallery" href="1.jpg"><img src="1.jpg" alt="" style="width:100%"></a>
+                    <a data-fancybox="gallery" href="3.jpg"><img src="3.jpg" alt="" style="width:100%"></a>
+                    <a data-fancybox="gallery" href="7.jpg"><img src="7.jpg" alt="" style="width:100%"></a>
+                </div>
+
+                <div class="half">
+                    <a data-fancybox="gallery" href="2.jpg"><img src="2.jpg" alt="" style="width:100%"></a>
+                    <a data-fancybox="gallery" href="6.jpg"><img src="6.jpg" alt="" style="width:100%"></a>
+                    <a data-fancybox="gallery" href="4.jpg"><img src="4.jpg" alt="" style="width:100%"></a>
+
+                </div>
+                <!-- End photo  -->
+            </div>
+            <video class="video" src="animacion2.mp4" controls>
+
+            </video>
+            <!-- End Portfolio Saction -->
+        </div>
+
+        <!-- Contact Saction -->
+        <div class="padding-32 content text-grey" id="contact">
+            <h2 class="text-light-grey">Contact Me</h2>
+            <hr style="width:200px" class="opacity">
+
+            <div class="section">
+                <p><i class="fas fa-map-marked-alt text-white xxlarge margin-right"></i> Berlin</p>
+                <p><i class="fas fa-mobile-alt text-white xxlarge margin-right"></i> Phone: +00 0000000</p>
+                <p><i class="far fa-envelope text-white xxlarge margin-right"> </i> Email: meskhi187@gmail.com</p>
+            </div><br>
+            <p>Lets get in touch. Send me a message:</p>
+
+            <form action="#" target="_blank">
+                <p><input class="input padding-16" type="text" placeholder="Name" required name="Name"></p>
+                <p><input class="input padding-16" type="text" placeholder="Email" required name="Email"></p>
+
+                <p><textarea class="input padding-16" placeholder="Message" required name="Message"> </textarea></p>
+                <p>
+                    <button class="button light-grey padding-large" type="submit">
+                        <i class="fa fa-paper-plane"></i> SEND MESSAGE
+                    </button>
+                </p>
+            </form>
+            <!-- End Contact Section -->
+        </div>
+        <div class="cat">
+            <img src="giphy2.gif" alt="cat" width="100px" height="auto" frameBorder="0">
+        </div>
+        <!-- Footer -->
+        <footer class="content padding-64 text-grey xlarge">
+            <a href="https://www.facebook.com/natia.meskhi.art/" target="_blank"><i
+                    class="fab fa-facebook hover-opacity"> </i></a>
+            <a href="https://www.instagram.com/natia187/" target="_blank">
+                <i class="fa fa-instagram hover-opacity"></i></a>
+        </footer>
+    </div>
+</body>
+
+</html>
